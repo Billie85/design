@@ -23,7 +23,7 @@ ul li{
 	display: flex;
 	background-color: rgba(225, 225, 225, 0.323);
 	padding: 10px 20px;
-	color: #fff;
+	color: #ffffff;
 	margin: 5px 0;
 	transition: .5s;
 }
@@ -77,6 +77,6 @@ ul li span:nth-child(4)
 
 ul li:hover
 {
-	transform: scale(1.06);
+	transform: scale(1.30);
 	background-color: #ff3772;
 }
