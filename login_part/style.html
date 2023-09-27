@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Login Page</title>
 </head>
 <body>
-	<div>
-		<div id="login-box">
-			<div class="left-box">
-				<form>
-				<h1>Login</h1>
-				<input type="email" name="email" placeholder="email">
-				<input type="password" name="password" placeholder="password">
-				<input type="submit" name="login-button" value="login">
-				<div class="another-login">or Login Using</div>
-				<!-- aタグにする -->
-				<button class="tokyo42">42Tokyo</button>
-				<button class="New-user">New User</button>
-			</form>
-			</div>
-			<div class="picture">
-			</div>
-		</div>
-	</div>
+    <div id="login-box">
+        <form>
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="email" name="email" placeholder="Email">
+                <i class='bx bx-envelope'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" name="password" placeholder="Password">
+                <i class='bx bx-lock-alt'></i>
+            </div>
+
+						<div class="Login_part">
+							<input type="submit" name="login-button" value="Login">
+						</div>
+	
+            <div class="another-login">or Login Using</div>
+            <div class="register-link">
+							<p>Are you a student?
+								<a href="#">42Tokyo</a>
+						</p>
+                <p>Don't have an account?
+                    <a href="#">Register</a>
+                </p>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
