@@ -1,8 +1,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Common Pixel', sans-serif;
 }
 
 body{
@@ -10,7 +9,7 @@ body{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url(./pexels-karolina-grabowska-4194853.jpg);
+  background-image: url(./RY6o_out.gif);
   background-size: cover;
   background-position: center;
 
@@ -81,7 +80,7 @@ input[type="password"]{
 
 /* btn */
 .Login_part input[type="submit"]{
-  color: rgb(195, 192, 255);
+  color: rgba(0, 0, 0, 0.497);
   width: 100%;
   height: 45px;
   background-color: white;
@@ -99,7 +98,7 @@ input[type="password"]{
 
 .Login_part input[type="submit"]:hover {
   color: white;
-  background-color: rgb(195, 192, 255);
+  background-color: rgba(233, 236, 38, 0.862);
   transition: 0.5s;
   box-shadow: 0 0 10px ;
 }
@@ -111,7 +110,7 @@ input[type="password"]{
 }
 
 #login-box .another-login{
-  color: rgba(0, 0, 0, 0.497);
+  color: rgba(233, 236, 38, 0.862);
   /* color: rgba(199, 235, 232, 0.862); */
   font-weight: 600;
   margin-top: 20px;
@@ -120,7 +119,7 @@ input[type="password"]{
 
 .register-link p a {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.497);
+  color: rgba(233, 236, 38, 0.862);
   font-weight: 800;
   transition: 0.4s;
   font-size: 15px;
@@ -128,6 +127,6 @@ input[type="password"]{
 
 .register-link p a:hover{
   text-decoration: underline;
-  color: rgba(150, 238, 231, 0.862);
+  color: rgba(233, 236, 38, 0.862);
   transition: 0.4s;
 }
