@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link href="https://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet">
+    <title>Signup</title>
+</head>
+<body>
+    <div id="login-box">
+        <form>
+            <h1>Sign Up</h1>
+            <div class="input-box">
+                <input type="text" name="username" placeholder="User Name">
+                <i class='bx bx-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="email" name="email" placeholder="Email">
+                <i class='bx bx-envelope'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" name="password" placeholder="Password">
+                <i class='bx bx-lock-alt'></i>
+            </div>
+            <div class="Login_part">
+                <input type="submit" name="login-button" value="Login">
+            </div>
+            <div class="another-login">or Login Using</div>
+            <div class="register-link">
+                <p>Are you a student?
+                    <a href="https://auth.42.fr/auth/realms/students-42/protocol/openid-connect/auth?client_id=intra&redirect_uri=https%3A%2F%2Fprofile.intra.42.fr%2Fusers%2Fauth%2Fkeycloak_student%2Fcallback&response_type=code&state=8ae6eb1ef9dec9bcea39c69d7fcace9f0a336f49a13f8921">42Tokyo</a></p>
+                <p>Already have an account?
+                    <a href="#">Login</a>
+                </p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
