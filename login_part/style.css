@@ -62,11 +62,12 @@ input[type="password"]{
   font-size: 20px;
   font-weight: 600;
   padding: 20px 45px 20px 20px;
+  color: rgba(233, 236, 38, 0.862);;
 }
 
 #login-box input::placeholder{
   font-size: 15px;
-  color: white;
+  color: rgba(233, 236, 38, 0.862);
 }
 
 #login-box i {
