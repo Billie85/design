@@ -7,10 +7,9 @@
     font-family: 'Raleway', sans-serif;
     list-style: none; /* liを使うと黒い点が出てくるから。それを取ってあげてる。 */
     text-decoration: none;
-    white-space: nowrap; 折り返さないように
-
+    white-space: nowrap; 
+    /* 折り返さないように */
 }
-
 
 body {
     background-color: #0000009c;
@@ -21,7 +20,6 @@ body {
     min-height: 100vh; /* コンテンツに合わせて伸縮させたい場合に使用する */
 }
 
-
 .sidebar {
     position: relative;
     width: 77px;
@@ -29,7 +27,6 @@ body {
     display: flex;
     flex-direction: column; /* column 積み重なるように配置する */
     background-color: white;
-    padding: 20px;
     border-radius: 10px;
     gap: 20px; /* 要素間の間隔 */
     overflow-x: hidden;
@@ -41,15 +38,14 @@ body {
     width: 220px;
 }
 
-
 /* 親要素 */
 .sidebar .top-part {
     position: absolute;
     display: flex;
     align-items: center;
     gap: 20px;
+    padding-left: 15px;
 }
-
 
 .usr-details {
     margin-top: 10px;
@@ -66,7 +62,6 @@ body {
     /* position: relative; */
     width: 40px;
     height: 40px;
-    
 }
 
 .user-img img {
@@ -75,12 +70,9 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    
 }
 
-
 /* ok */
-
 /* 親要素 */
 .menu ul{
     position: absolute;
@@ -95,7 +87,6 @@ body {
     /* position: relative; */
     display: block;
     width: 100%;
-
 }
 
 .menu ul li a {
