@@ -1,0 +1,83 @@
+
+* {
+    /* 余計な空白を削除 */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    list-style: none; /* liを使うと黒い点が出てくるから。それを取ってあげてる。 */
+    text-decoration: none;
+}
+
+
+body {
+    background-color: #0000009c;
+}
+
+.main_container {
+    width: 100%;
+    min-height: 100vh; /* コンテンツに合わせて伸縮させたい場合に使用する */
+}
+
+
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* column 積み重なるように配置する */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px; /* 要素間の間隔 */
+}
+
+
+.sidebar .top-part {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.usr-details {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.status {
+    margin-top: 10px;
+    font-size: 33px;
+    color: yellowgreen;
+}
+
+.user-img {
+    width: 44px;
+    height: 44px;
+}
+
+.user-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.menu ul li a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 60px;
+    color: rgba(0, 0, 0, 0.574);
+    padding-left: 40px;
+    border-top: 1px solid rgba(225, 225, 225, 0);
+    border-bottom: 1px solid black;
+    transition: 0.6s;
+}
+
+.menu ul li:hover a {
+    transition: 0.6s;
+    color: yellowgreen;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid yellowgreen;
+    transform: scale(1.2);
+}
