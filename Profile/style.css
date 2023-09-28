@@ -7,6 +7,8 @@
     font-family: 'Raleway', sans-serif;
     list-style: none; /* liを使うと黒い点が出てくるから。それを取ってあげてる。 */
     text-decoration: none;
+    /* white-space: nowrap; 折り返さないように */
+
 }
 
 
@@ -21,7 +23,8 @@ body {
 
 
 .sidebar {
-    width: 220px;
+    position: relative;
+    width: 77px;
     height: 100vh;
     display: flex;
     flex-direction: column; /* column 積み重なるように配置する */
@@ -29,6 +32,13 @@ body {
     padding: 20px;
     border-radius: 10px;
     gap: 20px; /* 要素間の間隔 */
+    overflow-x: hidden;
+    transition: 1.4s;
+}
+
+.sidebar:hover{
+    transition: 1.4s;
+    width: 220px;
 }
 
 
@@ -51,26 +61,48 @@ body {
 }
 
 .user-img {
-    width: 44px;
-    height: 44px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    
 }
 
 .user-img img {
+    position: relative;
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
+    
+}
+
+
+/* ok */
+.menu ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 100px;
+    padding-left: 10px;
+}
+
+.menu ul li{
+    /* position: relative; */
+    display: block;
+    width: 100%;
+
 }
 
 .menu ul li a {
-    display: block;
+    /* position: relative; */
+    display: flex;
     height: 100%;
     width: 100%;
     line-height: 60px;
     color: rgba(0, 0, 0, 0.574);
-    padding-left: 40px;
     border-top: 1px solid rgba(225, 225, 225, 0);
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid transparent;
     transition: 0.6s;
 }
 
@@ -80,4 +112,19 @@ body {
     border-top: 1px solid transparent;
     border-bottom: 1px solid yellowgreen;
     transform: scale(1.2);
+}
+
+.menu ul li a i {
+    /* display: block; に変更すると幅を指定できるようになる。 */
+    display: block;
+    min-width: 45px;
+    height: 60px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.menu ul li a span{
+    padding-left: 30px;
+    padding-top: 20px;
 }
