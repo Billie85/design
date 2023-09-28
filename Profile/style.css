@@ -7,7 +7,7 @@
     font-family: 'Raleway', sans-serif;
     list-style: none; /* liを使うと黒い点が出てくるから。それを取ってあげてる。 */
     text-decoration: none;
-    /* white-space: nowrap; 折り返さないように */
+    white-space: nowrap; 折り返さないように
 
 }
 
@@ -42,7 +42,9 @@ body {
 }
 
 
+/* 親要素 */
 .sidebar .top-part {
+    position: absolute;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -56,12 +58,12 @@ body {
 
 .status {
     margin-top: 10px;
-    font-size: 33px;
+    font-size: 45px;
     color: yellowgreen;
 }
 
 .user-img {
-    position: absolute;
+    /* position: relative; */
     width: 40px;
     height: 40px;
     
@@ -78,6 +80,8 @@ body {
 
 
 /* ok */
+
+/* 親要素 */
 .menu ul{
     position: absolute;
     top: 0;
