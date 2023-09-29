@@ -90,3 +90,31 @@ header .left-sidebar ul li a:hover {
 header .left-sidebar ul li a i{
     margin-right: 28px;
 }
+
+
+/* +++++++++++++++ BOX part +++++++++++++++ */
+
+#box-part {
+    position: relative;
+    width: 70%;
+    height: 50%;
+    top: 46%;
+    left: 5%;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+#box-part img {
+    width: 100px;
+    height: auto;
+}
+#box-part ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 33px;
+    position: absolute;
+    top: 0; /* 位置の調整 */
+    left: 0; /* 位置の調整 */
+    border-radius: 10px;
+}
