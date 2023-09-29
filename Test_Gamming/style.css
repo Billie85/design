@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
     white-space: nowrap; 
+    list-style: none;
+    text-decoration: none;
+    font-family: 'gameovercre', sans-serif;
 }
 
 /* browser parent */
@@ -62,7 +65,6 @@ header .left-sidebar:hover {
 header .left-sidebar ul {
     margin-top: 20px;
     margin-left: 20px;
-    list-style: none;
     display: flex; /* Flexbox を使用 */
     flex-direction: column; /* 垂直方向に配置 */
     padding: 0;
@@ -70,13 +72,11 @@ header .left-sidebar ul {
 
 header .left-sidebar ul li{
     margin-bottom: 33px;
-    list-style: none;
 }
 
 header .left-sidebar ul li a {
     display: inline-block;
     color: white;
-    text-decoration: none;
     transition: 0.5s;
 }
 
@@ -91,30 +91,16 @@ header .left-sidebar ul li a i{
     margin-right: 28px;
 }
 
-
-/* +++++++++++++++ BOX part +++++++++++++++ */
-
-#box-part {
-    position: relative;
-    width: 70%;
-    height: 50%;
-    top: 46%;
-    left: 5%;
-    background-color: transparent;
-    overflow: hidden;
+.subscriptions{
+    width: 10%;
+    height: 10%;
+    margin-left: 50px;
+    border: 1px solide rgb(209, 38, 209);
 }
 
-#box-part img {
-    width: 100px;
-    height: auto;
-}
-#box-part ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin-bottom: 33px;
-    position: absolute;
-    top: 0; /* 位置の調整 */
-    left: 0; /* 位置の調整 */
-    border-radius: 10px;
+/* 768px以下になったら無くす */
+@media screen and (max-width: 768px) {
+    .subscriptions {
+      display: none;
+    }
 }
