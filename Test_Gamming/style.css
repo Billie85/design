@@ -23,43 +23,57 @@ header {
     display: flex;
 }
 
-header aside, article {
+header .left-sidebar, article {
     width: 100%;
     height: 100%;
     border: 1px solid rgba(255, 255, 255, 0.312);
-    border-radius: 0px 40px 40px 0px;
+    border-radius: 0px 10px 10px 0px;
 }
 
-header aside {
-    width: 8%;
+header .left-sidebar  {
+    width: 62px;
     background-color: rgba(43, 35, 110, 0.388);
-    border-radius: 40px 0px 0px 20px;
+    border-radius: 10px 0px 0px 10px;
     transition: 0.6s;
     overflow-x: hidden;
 }
 
 /* hover */
-header aside:hover {
-    width: 24%;
+header .left-sidebar:hover {
+    width: 220px;
     background-color: rgba(43, 35, 110, 0.388);
-    border-radius: 40px 0px 0px 20px;
+    border-radius: 10px 0px 0px 10px;
     transition: 0.6s;
 }
 
-header aside ul {
-    margin-top: 15px;
+/* profile-picture */
+.profile-picture {
+    margin-top: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.profile-picture img {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
+}
+
+header .left-sidebar ul {
+    margin-top: 20px;
     margin-left: 20px;
     list-style: none;
-    /* border: 1px solid rgb(234, 104, 18); */
+    display: flex; /* Flexbox を使用 */
+    flex-direction: column; /* 垂直方向に配置 */
+    padding: 0;
 }
 
-header aside ul li{
-    margin-top: 40px;
-    margin-bottom: 10px;
+header .left-sidebar ul li{
+    margin-bottom: 33px;
     list-style: none;
 }
 
-header aside ul li a {
+header .left-sidebar ul li a {
     display: inline-block;
     color: white;
     text-decoration: none;
@@ -67,13 +81,12 @@ header aside ul li a {
 }
 
 /* hover */
-header aside ul li a:hover {
+header .left-sidebar ul li a:hover {
     color: rgb(128, 230, 128);
     transform: scale(1.2);
     transition: 0.5s;
 }
 
-header aside ul li a i{
-    margin-right: 20px;
+header .left-sidebar ul li a i{
+    margin-right: 28px;
 }
-
