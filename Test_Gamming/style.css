@@ -5,14 +5,14 @@
     white-space: nowrap; 
     list-style: none;
     text-decoration: none;
-    font-family: 'gameovercre', sans-serif;
+    /* font-family: 'gameovercre', sans-serif; */
 }
 
 /* browser parent */
 body {
     width: 100%;
     height: 100vh;
-    background-color: #1e2337;
+    background: rgb(33, 33, 33);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,9 +21,10 @@ body {
 header {
     width: 100%;
     height: 100%;
-    box-shadow: 0px 0px 30px rgb(20, 19, 19);  
+    box-shadow: 0px 0px 10px rgba(20, 19, 19, 0.35);  
     border-radius: 10px;
     display: flex;
+    border: 1px solid rgb(130, 102, 255);
 }
 
 header .left-sidebar, article {
@@ -31,11 +32,12 @@ header .left-sidebar, article {
     height: 100%;
     border: 1px solid rgba(255, 255, 255, 0.312);
     border-radius: 0px 10px 10px 0px;
+    border: 1px solid rgb(196, 102, 255);
 }
 
 header .left-sidebar  {
     width: 62px;
-    background-color: rgba(43, 35, 110, 0.388);
+    background-color: rgba(85, 86, 87, 0.388);
     border-radius: 10px 0px 0px 10px;
     transition: 0.6s;
     overflow-x: hidden;
@@ -43,41 +45,54 @@ header .left-sidebar  {
 
 /* hover */
 header .left-sidebar:hover {
-    width: 220px;
-    background-color: rgba(43, 35, 110, 0.388);
+    width: 160px;
+    background-color: rgba(63, 61, 64, 0.778);
     border-radius: 10px 0px 0px 10px;
     transition: 0.6s;
+    border: 2px solid rgb(196, 102, 255);
 }
 
 /* profile-picture */
 .profile-picture {
     margin-top: 10px;
-    margin-left: 2px;
-    margin-right: 2px;
+    /* margin-left: 4px;
+    margin-right: 2px; */
+    text-align: center;
 }
 
 .profile-picture img {
     width: 50px; 
     height: 50px; 
     border-radius: 50%;
+    border: 3px solid rgb(196, 102, 255);
 }
 
 header .left-sidebar ul {
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 10px;
     display: flex; /* Flexbox を使用 */
     flex-direction: column; /* 垂直方向に配置 */
-    padding: 0;
+}
+
+/* icon  */
+header .left-sidebar ul i{
+    border-radius: 100px;
+    box-shadow: 0px 0px 10px rgba(20, 19, 19, 0.35); 
+    padding: 10px;
+    font-size: 17px;
+    transition: 0.1s;
 }
 
 header .left-sidebar ul li{
     margin-bottom: 33px;
 }
 
+/* icon font */
 header .left-sidebar ul li a {
     display: inline-block;
     color: white;
     transition: 0.5s;
+    font-size: 7px;
 }
 
 /* hover */
@@ -87,20 +102,110 @@ header .left-sidebar ul li a:hover {
     transition: 0.5s;
 }
 
+header .left-sidebar ul li a:hover i {
+    border-radius: 40%; /* hover時の設定 */
+    transition: 0.1s;
+}
+
+
 header .left-sidebar ul li a i{
     margin-right: 28px;
 }
 
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~frined list part~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 .subscriptions{
-    width: 10%;
-    height: 10%;
-    margin-left: 50px;
-    border: 1px solide rgb(209, 38, 209);
+    width: 20%;
+    height: 100%;
+    align-items: center;
+    margin-left: 10px;
+    border: 1px solid rgb(130, 102, 255);
+    border-radius: 10px;
 }
 
+.subscriptions .friend-list{
+    height: 100%;
+    overflow-y: auto;
+}
+
+.subscriptions .friend-list .cards{
+    border: 1px solid rgba(255, 255, 255, 0.312);
+    box-shadow: ;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.subscriptions .friend-list .cards:hover{
+    border: 1px solid rgb(196, 102, 255);
+    transition: 0.3s;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.subscriptions .friend-list .cards .img_bx {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.subscriptions .friend-list .cards .img_bx::before {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background: greenyellow;
+    border-radius: 50%;
+    border: 3px solid #1e2337;
+    top: 19px;
+    right: -4px;
+}
+
+.subscriptions .friend-list .cards .img_bx img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.subscriptions .friend-list .cards .img_bx .content{
+    margin-left: 8px;
+}
+
+.subscriptions .friend-list .cards  .content h6{
+    width: 100px;
+    color: #ffffff;
+    font-size: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.subscriptions .friend-list .cards .content p{
+    width: 100px;
+    color: gray;
+    text-align: center;
+    font-weight: 1px;
+    font-size: 1px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 3px;
+}
+
+
 /* 768px以下になったら無くす */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .subscriptions {
       display: none;
     }
-}
+} */
