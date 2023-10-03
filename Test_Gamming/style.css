@@ -6,7 +6,8 @@
     white-space: nowrap;
     list-style: none;
     text-decoration: none;
-    font-family: 'Opening Hours Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* browser parent */
@@ -191,12 +192,12 @@ header .Box-container .bottom-box {
     margin-top: 10px;
     /* height: 400px; */
     /* border: 1px solid rgb(0, 255, 191); */
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 0px 0px 10px rgba(149, 98, 226, 0.661);  
+    /* box-shadow: 0px 0px 10px rgba(149, 98, 226, 0.661);   */
     background-color: rgba(127, 83, 208, 0.453);
 }
 
 header .Box-container .bottom-box .boxs {
+    margin-top: 100px;
     position: absolute;
     width: 100%;
     height: auto;
@@ -206,23 +207,40 @@ header .Box-container .bottom-box .boxs {
     align-items: center;
     flex-wrap: wrap;
     overflow: auto;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 0px 0px 10px rgba(149, 98, 226, 0.661);  
+    box-shadow: 0px 0px 10px rgba(177, 173, 184, 0.661); 
+    border-radius: 40px;
 }
 
 header .Box-container .bottom-box .box img{
-    margin: 6px;
-    width: 150px;
-    height: 100px;
-    border-radius: 10px 10px 10px 10px;
+    margin: 20px;
+    width: 160px;
+    height: 160px;
     object-fit: cover;
     cursor: pointer;
-    /* margin-left: 10px; */
+    animation: bounce 1s infinite cubic-bezier(0.25, 1, 0.5, 1);
+    transition: transform 0.5s;
 }
+
+header .Box-container .bottom-box .box img:hover{
+    transform: scale(1.2);
+    animation: none;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* 初期位置 */
+      }
+      50% {
+        transform: translateY(-2px); /* 上に動く */
+      }
+}
+
+
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~frined list part~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .subscriptions{
+    margin: 5px;
     box-shadow: 0px 0px 10px rgba(149, 98, 226, 0.661);  
     width: 20%;
     height: 100%;
@@ -245,6 +263,7 @@ header .Box-container .bottom-box .box img{
     flex-direction: row;
     margin-top: 10px;
     transition: 0.3s;
+    font-size: 100;
 }
 
 .subscriptions .friend-list .cards:hover{
@@ -257,6 +276,7 @@ header .Box-container .bottom-box .box img{
 }
 
 .subscriptions .friend-list .cards .img_bx {
+    margin: 5px;
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -270,7 +290,7 @@ header .Box-container .bottom-box .box img{
     height: 7px;
     background: greenyellow;
     border-radius: 50%;
-    border: 3px solid rgb(207, 190, 223);
+    border: 3px solid rgb(3, 3, 28);
     top: 19px;
     right: -4px;
 }
@@ -287,9 +307,9 @@ header .Box-container .bottom-box .box img{
 }
 
 .subscriptions .friend-list .cards  .content h6{
+    font-size: ;
     width: 100px;
     color: #ffffff;
-    font-size: 10px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
