@@ -68,8 +68,6 @@ header .left-sidebar:hover {
 header .left-sidebar ul {
     margin-top: 20px;
     margin-left: 10px;
-    display: flex; /* Flexbox を使用 */
-    flex-direction: column; /* 垂直方向に配置 */
 }
 
 /* icon  */
@@ -239,20 +237,18 @@ header .Box-container .bottom-box .box img:hover{
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~frined list part~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-.subscriptions{
+.subscriptions {
     margin: 5px;
-    box-shadow: 0px 0px 10px rgba(149, 98, 226, 0.661);  
+    box-shadow: 0px 0px 10px rgba(189, 177, 207, 0.661);
     width: 20%;
     height: 100%;
-    align-items: center;
-    margin-left: 10px;
-    /* border: 1px solid rgb(130, 102, 255); */
+    /* align-items: center; */
     border-radius: 20px;
+    overflow: scroll;
 }
 
 .subscriptions .friend-list{
     height: 100%;
-    overflow-y: auto;
 }
 
 .subscriptions .friend-list .cards{
@@ -264,6 +260,8 @@ header .Box-container .bottom-box .box img:hover{
     margin-top: 10px;
     transition: 0.3s;
     font-size: 100;
+    justify-content: center; /* 水平方向に中央寄せ */
+    align-items: center; /* 垂直方向に中央寄せ */
 }
 
 .subscriptions .friend-list .cards:hover{
@@ -272,6 +270,7 @@ header .Box-container .bottom-box .box img:hover{
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     margin-top: 10px;
 }
 
@@ -281,6 +280,7 @@ header .Box-container .bottom-box .box img:hover{
     height: 35px;
     border-radius: 50%;
     position: relative;
+    
 }
 
 .subscriptions .friend-list .cards .img_bx::before {
@@ -307,7 +307,6 @@ header .Box-container .bottom-box .box img:hover{
 }
 
 .subscriptions .friend-list .cards  .content h6{
-    font-size: ;
     width: 100px;
     color: #ffffff;
     text-overflow: ellipsis;
